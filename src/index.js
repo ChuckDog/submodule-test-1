@@ -1,5 +1,5 @@
-import { lodashConcat, getRandomInt } from "../utils/helper.js";
+import helper from "../utils/helper.js";
 
-const randomInt = getRandomInt(1, 1000);
+const randomInt = helper.getRandomInt(1, 1000);
 
-export default { randomInt, getRandomInt, lodashConcat };
+export default { randomInt, ...helper };
